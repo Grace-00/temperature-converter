@@ -30,3 +30,31 @@ body {
     border-radius: 1.5rem;
     height: 80%;
 }
+
+img {
+    height: 300px;
+    width: 300px;
+    align-self: flex-start;
+    margin-left: 0.5rem;
+    margin-right: 6rem;
+}
+  
+.img-wrapper {
+    display: flex;
+    padding: 5rem;
+    height: 100%;
+    align-items: center;
+}
+  
+.wrapper-form {
+    height: 60%;
+    width: 80%;
+}
+
+.elements-wrap {
+    display: flex;
+}
+  
+h1 {
+    text-align: center;
+}
