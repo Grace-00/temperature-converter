@@ -10,3 +10,14 @@ window.addEventListener("DOMContentLoaded", (e) => {
     e.preventDefault();
     const userInputValue = document.getElementById("userInput").value;
     const selectTemperature = document.getElementById("temperature").value;
+
+    //transform c in f...
+    const farenheit = (c) => {
+        let f = (c * 9) / 5 + 32;
+        return Math.round(f);
+      };
+      //...and viceversa
+      const celsius = (f) => {
+        let c = ((f - 32) * 5) / 9;
+        return Math.round(c);
+      };    
