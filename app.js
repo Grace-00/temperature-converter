@@ -20,4 +20,17 @@ window.addEventListener("DOMContentLoaded", (e) => {
       const celsius = (f) => {
         let c = ((f - 32) * 5) / 9;
         return Math.round(c);
-      };    
+      };
+      
+    //logic on result statement
+    if (userInputValue !== "" && selectTemperature === "celsius") {
+        result.innerHTML = userInputValue + "° Celsius is " +
+          farenheit(userInputValue) +  "° Farenheit";
+      } else if (userInputValue !== "" && selectTemperature === "farenheit") {result.innerHTML = userInputValue +
+          "° Farenheit is " + celsius(userInputValue) +
+          "° Celsius";
+      } else {
+        result.innerHTML = "Please enter a value";
+      }
+    });
+  });      
