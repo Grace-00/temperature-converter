@@ -58,3 +58,42 @@ img {
 h1 {
     text-align: center;
 }
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 100%;
+}
+  
+input[type="number"]:focus,
+  button:focus,
+  select:focus {
+    outline: none;
+}
+  
+input[type="number"]:focus {
+    box-shadow: 10px 10px 5px 0px #3487f4;
+    border: 3px solid #3487f4;
+}
+  
+button:focus {
+    border: 3px solid black;
+}
+  
+input[type="number"],
+button,
+select {
+    margin: 0.5rem;
+}
+  
+input[type="number"] {
+    font-family: "Roboto", sans-serif;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    font-size: 2.5rem;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.4);
+}
