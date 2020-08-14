@@ -127,3 +127,33 @@ p {
     text-align: center;
     border-bottom: 3rem;
 }
+
+@media only screen and (max-width: 600px) {
+    .img-wrapper {
+      display: block;
+      padding: 0;
+    }
+    .sub-wrapper {
+      height: 100%;
+    }
+  
+    img {
+      height: 150px;
+    }
+  
+    .elements-wrap {
+      display: block;
+    }
+  
+    .wrapper-form {
+      padding: 2.5rem;
+      margin-left: 2.5rem;
+      margin-top: 0;
+    }
+  
+    input[type="number"],
+    select,
+    button {
+      width: 100%;
+    }
+}
